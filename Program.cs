@@ -25,8 +25,8 @@ namespace CabInvoiceGenerater
 
             Console.WriteLine("Using UserId To fetch the summary of rides :");
             Ride[] rides = { new Ride(2.0, 5), new Ride(0.1, 5) };
-            rideRepository.AddRide("Pawan", rides);
-            InvoiceSummary summary = invoiceGenerator.CalculateFare(rideRepository.getRides("Pawan"));
+            rideRepository.AddRide("kiran", rides);
+            InvoiceSummary summary = invoiceGenerator.CalculateFare(rideRepository.getRides("kiran"));
             Console.WriteLine($"No. Of Rides -> { summary.numberOfRides}\nTotal Fare -> {summary.totalFare}\nAverage Fare -> {summary.averageFare}\n");
 
             #endregion Normal Cab Type
@@ -48,7 +48,7 @@ namespace CabInvoiceGenerater
 
             Console.WriteLine("Using UserId To fetch the summary of rides :");
             Ride[] rides1 = { new Ride(4.0, 10), new Ride(5.1, 15) };
-            rideRepositoryObj.AddRide("Sagar", rides1);
+            rideRepositoryObj.AddRide("kiran", rides1);
             InvoiceSummary summary1 = invoiceGeneratorObj.CalculateFare(rideRepositoryObj.getRides("Sagar"));
             Console.WriteLine($"No. Of Rides -> { summary1.numberOfRides}\nTotal Fare -> {summary1.totalFare}\nAverage Fare -> {summary1.averageFare}\n");
 
